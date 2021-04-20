@@ -1,0 +1,161 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+AddToList	main_wnd.cc	/^void AddToList(GtkWidget* list, const gchar* str, int value) {$/;"	f	namespace:__anon1
+CONNECTED	peer_connection_client.h	/^    CONNECTED,$/;"	e	enum:PeerConnectionClient::State
+Close	peer_connection_client.cc	/^void PeerConnectionClient::Close() {$/;"	f	class:PeerConnectionClient
+Conductor	conductor_boliving.cc	/^Conductor::Conductor(PeerConnectionClient *client)$/;"	f	class:Conductor
+Conductor	conductor_boliving.h	/^class Conductor : public webrtc::PeerConnectionObserver,$/;"	c
+Connect	conductor_boliving.cc	/^void Conductor::Connect(std::string server, int port) {$/;"	f	class:Conductor
+Connect	peer_connection_client.cc	/^void PeerConnectionClient::Connect(const std::string& server,$/;"	f	class:PeerConnectionClient
+ConnectControlSocket	peer_connection_client.cc	/^bool PeerConnectionClient::ConnectControlSocket() {$/;"	f	class:PeerConnectionClient
+ConnectToPeer	conductor_boliving.cc	/^void Conductor::ConnectToPeer() {$/;"	f	class:Conductor
+Create	main_wnd.cc	/^bool GtkMainWnd::Create() {$/;"	f	class:GtkMainWnd
+CreateClientSocket	peer_connection_client.cc	/^rtc::AsyncSocket* CreateClientSocket(int family) {$/;"	f	namespace:__anon2
+CustomSocketServer	main.cc	/^  explicit CustomSocketServer(GtkMainWnd* wnd)$/;"	f	class:CustomSocketServer
+CustomSocketServer	main.cc	/^class CustomSocketServer : public rtc::PhysicalSocketServer {$/;"	c	file:
+Destroy	main_wnd.cc	/^bool GtkMainWnd::Destroy() {$/;"	f	class:GtkMainWnd
+DoConnect	peer_connection_client.cc	/^void PeerConnectionClient::DoConnect() {$/;"	f	class:PeerConnectionClient
+Draw	main_wnd.cc	/^gboolean Draw(GtkWidget* widget, cairo_t* cr, gpointer data) {$/;"	f	namespace:__anon1
+Draw	main_wnd.cc	/^void GtkMainWnd::Draw(GtkWidget* widget, cairo_t* cr) {$/;"	f	class:GtkMainWnd
+EXAMPLES_PEERCONNECTION_CLIENT_LINUX_MAIN_WND_H_	main_wnd.h	12;"	d
+EXAMPLES_PEERCONNECTION_CLIENT_PEER_CONNECTION_CLIENT_H_	peer_connection_client.h	12;"	d
+GdkEvent	main_wnd.h	/^typedef union _GdkEvent GdkEvent;$/;"	t	typeref:union:_GdkEvent
+GdkEventKey	main_wnd.h	/^typedef struct _GdkEventKey GdkEventKey;$/;"	t	typeref:struct:_GdkEventKey
+GetHeaderValue	peer_connection_client.cc	/^bool PeerConnectionClient::GetHeaderValue(const std::string& data,$/;"	f	class:PeerConnectionClient
+GetResponseStatus	peer_connection_client.cc	/^int PeerConnectionClient::GetResponseStatus(const std::string& response) {$/;"	f	class:PeerConnectionClient
+GtkMainWnd	main_wnd.cc	/^GtkMainWnd::GtkMainWnd(const char* server,$/;"	f	class:GtkMainWnd
+GtkMainWnd	main_wnd.h	/^class GtkMainWnd : public MainWindow {$/;"	c
+GtkTreePath	main_wnd.h	/^typedef struct _GtkTreePath GtkTreePath;$/;"	t	typeref:struct:_GtkTreePath
+GtkTreeView	main_wnd.h	/^typedef struct _GtkTreeView GtkTreeView;$/;"	t	typeref:struct:_GtkTreeView
+GtkTreeViewColumn	main_wnd.h	/^typedef struct _GtkTreeViewColumn GtkTreeViewColumn;$/;"	t	typeref:struct:_GtkTreeViewColumn
+GtkWidget	main_wnd.h	/^typedef struct _GtkWidget GtkWidget;$/;"	t	typeref:struct:_GtkWidget
+HandleUIThreadCallback	main_wnd.cc	/^gboolean HandleUIThreadCallback(gpointer data) {$/;"	f	namespace:__anon1
+InitSocketSignals	peer_connection_client.cc	/^void PeerConnectionClient::InitSocketSignals() {$/;"	f	class:PeerConnectionClient
+InitializeList	main_wnd.cc	/^void InitializeList(GtkWidget* list) {$/;"	f	namespace:__anon1
+InitializePeerConnection	conductor_boliving.cc	/^bool Conductor::InitializePeerConnection() {$/;"	f	class:Conductor
+IsSendingMessage	peer_connection_client.cc	/^bool PeerConnectionClient::IsSendingMessage() {$/;"	f	class:PeerConnectionClient
+IsWindow	main_wnd.cc	/^bool GtkMainWnd::IsWindow() {$/;"	f	class:GtkMainWnd
+MessageBox	main_wnd.cc	/^void GtkMainWnd::MessageBox(const char* caption,$/;"	f	class:GtkMainWnd
+NOT_CONNECTED	peer_connection_client.h	/^    NOT_CONNECTED,$/;"	e	enum:PeerConnectionClient::State
+OnClicked	main_wnd.cc	/^void GtkMainWnd::OnClicked(GtkWidget* widget) {$/;"	f	class:GtkMainWnd
+OnClickedCallback	main_wnd.cc	/^void OnClickedCallback(GtkWidget* widget, gpointer data) {$/;"	f	namespace:__anon1
+OnClose	peer_connection_client.cc	/^void PeerConnectionClient::OnClose(rtc::AsyncSocket* socket, int err) {$/;"	f	class:PeerConnectionClient
+OnConnect	peer_connection_client.cc	/^void PeerConnectionClient::OnConnect(rtc::AsyncSocket* socket) {$/;"	f	class:PeerConnectionClient
+OnDestroyed	main_wnd.cc	/^void GtkMainWnd::OnDestroyed(GtkWidget* widget, GdkEvent* event) {$/;"	f	class:GtkMainWnd
+OnDestroyedCallback	main_wnd.cc	/^gboolean OnDestroyedCallback(GtkWidget* widget,$/;"	f	namespace:__anon1
+OnFailure	conductor_boliving.cc	/^void Conductor::OnFailure(webrtc::RTCError error) {$/;"	f	class:Conductor
+OnFrame	main_wnd.cc	/^void GtkMainWnd::VideoRenderer::OnFrame(const webrtc::VideoFrame& video_frame) {$/;"	f	class:GtkMainWnd::VideoRenderer
+OnHangingGetConnect	peer_connection_client.cc	/^void PeerConnectionClient::OnHangingGetConnect(rtc::AsyncSocket* socket) {$/;"	f	class:PeerConnectionClient
+OnHangingGetRead	peer_connection_client.cc	/^void PeerConnectionClient::OnHangingGetRead(rtc::AsyncSocket* socket) {$/;"	f	class:PeerConnectionClient
+OnKeyPress	main_wnd.cc	/^void GtkMainWnd::OnKeyPress(GtkWidget* widget, GdkEventKey* key) {$/;"	f	class:GtkMainWnd
+OnKeyPressCallback	main_wnd.cc	/^gboolean OnKeyPressCallback(GtkWidget* widget,$/;"	f	namespace:__anon1
+OnMessage	peer_connection_client.cc	/^void PeerConnectionClient::OnMessage(rtc::Message* msg) {$/;"	f	class:PeerConnectionClient
+OnMessageFromPeer	peer_connection_client.cc	/^void PeerConnectionClient::OnMessageFromPeer(int peer_id,$/;"	f	class:PeerConnectionClient
+OnRead	peer_connection_client.cc	/^void PeerConnectionClient::OnRead(rtc::AsyncSocket* socket) {$/;"	f	class:PeerConnectionClient
+OnRedraw	main_wnd.cc	/^void GtkMainWnd::OnRedraw() {$/;"	f	class:GtkMainWnd
+OnResolveResult	peer_connection_client.cc	/^void PeerConnectionClient::OnResolveResult($/;"	f	class:PeerConnectionClient
+OnRowActivated	main_wnd.cc	/^void GtkMainWnd::OnRowActivated(GtkTreeView* tree_view,$/;"	f	class:GtkMainWnd
+OnRowActivatedCallback	main_wnd.cc	/^void OnRowActivatedCallback(GtkTreeView* tree_view,$/;"	f	namespace:__anon1
+OnSuccess	conductor_boliving.cc	/^void Conductor::OnSuccess(webrtc::SessionDescriptionInterface* desc){$/;"	f	class:Conductor
+PEERCONNECTION_CLIENT_CONDUCTOR_BOLIVING_H__	conductor_boliving.h	2;"	d
+ParseEntry	peer_connection_client.cc	/^bool PeerConnectionClient::ParseEntry(const std::string& entry,$/;"	f	class:PeerConnectionClient
+ParseServerResponse	peer_connection_client.cc	/^bool PeerConnectionClient::ParseServerResponse(const std::string& response,$/;"	f	class:PeerConnectionClient
+PeerConnectionClient	peer_connection_client.cc	/^PeerConnectionClient::PeerConnectionClient()$/;"	f	class:PeerConnectionClient
+PeerConnectionClient	peer_connection_client.h	/^class PeerConnectionClient : public sigslot::has_slots<>,$/;"	c
+PeerConnectionClientObserver	peer_connection_client.h	/^struct PeerConnectionClientObserver {$/;"	s
+Peers	peer_connection_client.h	/^typedef std::map<int, std::string> Peers;$/;"	t
+QueueUIThreadCallback	main_wnd.cc	/^void GtkMainWnd::QueueUIThreadCallback(int msg_id, void* data) {$/;"	f	class:GtkMainWnd
+RESOLVING	peer_connection_client.h	/^    RESOLVING,$/;"	e	enum:PeerConnectionClient::State
+ReadIntoBuffer	peer_connection_client.cc	/^bool PeerConnectionClient::ReadIntoBuffer(rtc::AsyncSocket* socket,$/;"	f	class:PeerConnectionClient
+Redraw	main_wnd.cc	/^gboolean Redraw(gpointer data) {$/;"	f	namespace:__anon1
+RegisterObserver	main_wnd.cc	/^void GtkMainWnd::RegisterObserver(MainWndCallback* callback) {$/;"	f	class:GtkMainWnd
+RegisterObserver	peer_connection_client.cc	/^void PeerConnectionClient::RegisterObserver($/;"	f	class:PeerConnectionClient
+SIGNING_IN	peer_connection_client.h	/^    SIGNING_IN,$/;"	e	enum:PeerConnectionClient::State
+SIGNING_OUT	peer_connection_client.h	/^    SIGNING_OUT,$/;"	e	enum:PeerConnectionClient::State
+SIGNING_OUT_WAITING	peer_connection_client.h	/^    SIGNING_OUT_WAITING,$/;"	e	enum:PeerConnectionClient::State
+SendHangUp	peer_connection_client.cc	/^bool PeerConnectionClient::SendHangUp(int peer_id) {$/;"	f	class:PeerConnectionClient
+SendMessage	conductor_boliving.cc	/^void Conductor::SendMessage(const std::string& json_object) {$/;"	f	class:Conductor
+SendToPeer	peer_connection_client.cc	/^bool PeerConnectionClient::SendToPeer(int peer_id, const std::string& message) {$/;"	f	class:PeerConnectionClient
+SetSize	main_wnd.cc	/^void GtkMainWnd::VideoRenderer::SetSize(int width, int height) {$/;"	f	class:GtkMainWnd::VideoRenderer
+SignOut	peer_connection_client.cc	/^bool PeerConnectionClient::SignOut() {$/;"	f	class:PeerConnectionClient
+SimulateButtonClick	main_wnd.cc	/^gboolean SimulateButtonClick(gpointer button) {$/;"	f	namespace:__anon1
+SimulateLastRowActivated	main_wnd.cc	/^gboolean SimulateLastRowActivated(gpointer data) {$/;"	f	namespace:__anon1
+StartLocalRenderer	main_wnd.cc	/^void GtkMainWnd::StartLocalRenderer(webrtc::VideoTrackInterface* local_video) {$/;"	f	class:GtkMainWnd
+StartRemoteRenderer	main_wnd.cc	/^void GtkMainWnd::StartRemoteRenderer($/;"	f	class:GtkMainWnd
+State	peer_connection_client.h	/^  enum State {$/;"	g	class:PeerConnectionClient
+StopLocalRenderer	main_wnd.cc	/^void GtkMainWnd::StopLocalRenderer() {$/;"	f	class:GtkMainWnd
+StopRemoteRenderer	main_wnd.cc	/^void GtkMainWnd::StopRemoteRenderer() {$/;"	f	class:GtkMainWnd
+SwitchToConnectUI	main_wnd.cc	/^void GtkMainWnd::SwitchToConnectUI() {$/;"	f	class:GtkMainWnd
+SwitchToPeerList	main_wnd.cc	/^void GtkMainWnd::SwitchToPeerList(const Peers& peers) {$/;"	f	class:GtkMainWnd
+SwitchToStreamingUI	main_wnd.cc	/^void GtkMainWnd::SwitchToStreamingUI() {$/;"	f	class:GtkMainWnd
+UIThreadCallbackData	main_wnd.cc	/^  explicit UIThreadCallbackData(MainWndCallback* cb, int id, void* d)$/;"	f	struct:__anon1::UIThreadCallbackData
+UIThreadCallbackData	main_wnd.cc	/^struct UIThreadCallbackData {$/;"	s	namespace:__anon1	file:
+VideoRenderer	main_wnd.cc	/^GtkMainWnd::VideoRenderer::VideoRenderer($/;"	f	class:GtkMainWnd::VideoRenderer
+VideoRenderer	main_wnd.h	/^  class VideoRenderer : public rtc::VideoSinkInterface<webrtc::VideoFrame> {$/;"	c	class:GtkMainWnd
+autocall_	main_wnd.h	/^  bool autocall_;$/;"	m	class:GtkMainWnd
+autoconnect_	main_wnd.h	/^  bool autoconnect_;$/;"	m	class:GtkMainWnd
+cairo_t	main_wnd.h	/^typedef struct _cairo cairo_t;$/;"	t	typeref:struct:_cairo
+callback	main_wnd.cc	/^  MainWndCallback* callback;$/;"	m	struct:__anon1::UIThreadCallbackData	file:
+callback_	main_wnd.h	/^  MainWndCallback* callback_;$/;"	m	class:GtkMainWnd
+callback_	peer_connection_client.h	/^  PeerConnectionClientObserver* callback_;$/;"	m	class:PeerConnectionClient
+client_	conductor_boliving.h	/^    PeerConnectionClient* client_;$/;"	m	class:Conductor
+client_	main.cc	/^  PeerConnectionClient* client_;$/;"	m	class:CustomSocketServer	file:
+conductor_	main.cc	/^  Conductor* conductor_;$/;"	m	class:CustomSocketServer	file:
+control_data_	peer_connection_client.h	/^  std::string control_data_;$/;"	m	class:PeerConnectionClient
+control_socket_	peer_connection_client.h	/^  std::unique_ptr<rtc::AsyncSocket> control_socket_;$/;"	m	class:PeerConnectionClient
+current_ui	main_wnd.cc	/^MainWindow::UI GtkMainWnd::current_ui() {$/;"	f	class:GtkMainWnd
+data	main_wnd.cc	/^  void* data;$/;"	m	struct:__anon1::UIThreadCallbackData	file:
+draw_area_	main_wnd.h	/^  GtkWidget* draw_area_;  \/\/ The drawing surface for rendering video streams.$/;"	m	class:GtkMainWnd
+draw_buffer_	main_wnd.h	/^  std::unique_ptr<uint8_t[]> draw_buffer_;$/;"	m	class:GtkMainWnd
+draw_buffer_size_	main_wnd.h	/^  int draw_buffer_size_;$/;"	m	class:GtkMainWnd
+height	main_wnd.h	/^    int height() const { return height_; }$/;"	f	class:GtkMainWnd::VideoRenderer
+height_	main_wnd.h	/^    int height_;$/;"	m	class:GtkMainWnd::VideoRenderer
+height_	main_wnd.h	/^  int height_;$/;"	m	class:GtkMainWnd
+id	peer_connection_client.cc	/^int PeerConnectionClient::id() const {$/;"	f	class:PeerConnectionClient
+image	main_wnd.h	/^    const uint8_t* image() const { return image_.get(); }$/;"	f	class:GtkMainWnd::VideoRenderer
+image_	main_wnd.h	/^    std::unique_ptr<uint8_t[]> image_;$/;"	m	class:GtkMainWnd::VideoRenderer
+is_connected	peer_connection_client.cc	/^bool PeerConnectionClient::is_connected() const {$/;"	f	class:PeerConnectionClient
+kByeMessage	peer_connection_client.cc	/^const char kByeMessage[] = "BYE";$/;"	m	namespace:__anon2	file:
+kReconnectDelay	peer_connection_client.cc	/^const int kReconnectDelay = 2000;$/;"	m	namespace:__anon2	file:
+local_renderer_	main_wnd.h	/^  std::unique_ptr<VideoRenderer> local_renderer_;$/;"	m	class:GtkMainWnd
+main	boliving_main.cc	/^int main() {$/;"	f
+main	main.cc	/^int main(int argc, char* argv[]) {$/;"	f
+main_wnd_	main_wnd.h	/^    GtkMainWnd* main_wnd_;$/;"	m	class:GtkMainWnd::VideoRenderer
+message_queue_	main.cc	/^  rtc::MessageQueue* message_queue_;$/;"	m	class:CustomSocketServer	file:
+msg_id	main_wnd.cc	/^  int msg_id;$/;"	m	struct:__anon1::UIThreadCallbackData	file:
+notification_data_	peer_connection_client.h	/^  std::string notification_data_;$/;"	m	class:PeerConnectionClient
+onconnect_data_	peer_connection_client.h	/^  std::string onconnect_data_;$/;"	m	class:PeerConnectionClient
+override	conductor_boliving.h	/^    void OnFailure(webrtc::RTCError error) override;$/;"	m	class:Conductor
+override	conductor_boliving.h	/^    void OnSuccess(webrtc::SessionDescriptionInterface* desc) override;$/;"	m	class:Conductor
+override	main_wnd.h	/^    void OnFrame(const webrtc::VideoFrame& frame) override;$/;"	m	class:GtkMainWnd::VideoRenderer
+peer_connection_	conductor_boliving.h	/^    rtc::scoped_refptr<webrtc::PeerConnectionInterface> peer_connection_;$/;"	m	class:Conductor
+peer_connection_factory_	conductor_boliving.h	/^    rtc::scoped_refptr<webrtc::PeerConnectionFactoryInterface> peer_connection_factory_;$/;"	m	class:Conductor
+peer_list_	main_wnd.h	/^  GtkWidget* peer_list_;  \/\/ The list of peers.$/;"	m	class:GtkMainWnd
+peers	peer_connection_client.cc	/^const Peers& PeerConnectionClient::peers() const {$/;"	f	class:PeerConnectionClient
+peers_	peer_connection_client.h	/^  Peers peers_;$/;"	m	class:PeerConnectionClient
+port_	main_wnd.h	/^  std::string port_;$/;"	m	class:GtkMainWnd
+port_edit_	main_wnd.h	/^  GtkWidget* port_edit_;$/;"	m	class:GtkMainWnd
+remote_renderer_	main_wnd.h	/^  std::unique_ptr<VideoRenderer> remote_renderer_;$/;"	m	class:GtkMainWnd
+rendered_track_	main_wnd.h	/^    rtc::scoped_refptr<webrtc::VideoTrackInterface> rendered_track_;$/;"	m	class:GtkMainWnd::VideoRenderer
+resolver_	peer_connection_client.h	/^  rtc::AsyncResolver* resolver_;$/;"	m	class:PeerConnectionClient
+server_	main_wnd.h	/^  std::string server_;$/;"	m	class:GtkMainWnd
+server_address_	peer_connection_client.h	/^  rtc::SocketAddress server_address_;$/;"	m	class:PeerConnectionClient
+server_edit_	main_wnd.h	/^  GtkWidget* server_edit_;$/;"	m	class:GtkMainWnd
+set_client	main.cc	/^  void set_client(PeerConnectionClient* client) { client_ = client; }$/;"	f	class:CustomSocketServer
+set_conductor	main.cc	/^  void set_conductor(Conductor* conductor) { conductor_ = conductor; }$/;"	f	class:CustomSocketServer
+state_	peer_connection_client.h	/^  State state_;$/;"	m	class:PeerConnectionClient
+vbox_	main_wnd.h	/^  GtkWidget* vbox_;       \/\/ Container for the Connect UI.$/;"	m	class:GtkMainWnd
+width	main_wnd.h	/^    int width() const { return width_; }$/;"	f	class:GtkMainWnd::VideoRenderer
+width_	main_wnd.h	/^    int width_;$/;"	m	class:GtkMainWnd::VideoRenderer
+width_	main_wnd.h	/^  int width_;$/;"	m	class:GtkMainWnd
+window_	main_wnd.h	/^  GtkWidget* window_;     \/\/ Our main window.$/;"	m	class:GtkMainWnd
+wnd_	main.cc	/^  GtkMainWnd* wnd_;$/;"	m	class:CustomSocketServer	file:
+~CustomSocketServer	main.cc	/^  virtual ~CustomSocketServer() {}$/;"	f	class:CustomSocketServer
+~GtkMainWnd	main_wnd.cc	/^GtkMainWnd::~GtkMainWnd() {$/;"	f	class:GtkMainWnd
+~PeerConnectionClient	peer_connection_client.cc	/^PeerConnectionClient::~PeerConnectionClient() {}$/;"	f	class:PeerConnectionClient
+~PeerConnectionClientObserver	peer_connection_client.h	/^  virtual ~PeerConnectionClientObserver() {}$/;"	f	struct:PeerConnectionClientObserver
+~VideoRenderer	main_wnd.cc	/^GtkMainWnd::VideoRenderer::~VideoRenderer() {$/;"	f	class:GtkMainWnd::VideoRenderer
