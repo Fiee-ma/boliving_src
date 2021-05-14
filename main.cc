@@ -77,8 +77,8 @@ int main(int argc, char* argv[]) {
   g_thread_init(NULL);
 #endif
 
-//  rtc::LogMessage::LogToDebug(rtc::LS_INFO);
-//  rtc::LogMessage::ConfigureLogging("tstamp thread info debug");
+  rtc::LogMessage::LogToDebug(rtc::LS_INFO);
+  rtc::LogMessage::ConfigureLogging("tstamp thread info debug");
 
   rtc::FlagList::SetFlagsFromCommandLine(&argc, argv, true);
   if (FLAG_help) {
@@ -100,6 +100,7 @@ int main(int argc, char* argv[]) {
   GtkMainWnd wnd(FLAG_server, 8888, FLAG_autoconnect, FLAG_autocall);
   wnd.Create();
 
+  std::cout << "main.cc CustomSocketServer socket_server(&wnd) before" << std::endl;
   CustomSocketServer socket_server(&wnd);
   rtc::AutoSocketServerThread thread(&socket_server);
 

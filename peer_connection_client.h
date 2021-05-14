@@ -20,14 +20,12 @@
 #include "rtc_base/signal_thread.h"
 #include "rtc_base/third_party/sigslot/sigslot.h"
 
-typedef std::map<int, std::string> Peers;
-
 struct PeerConnectionClientObserver {
   virtual void OnSignedIn() = 0;  // Called when we're logged on.
   virtual void OnDisconnected() = 0;
   virtual void OnPeerConnected(int id, const std::string& name) = 0;
   virtual void OnPeerDisconnected(int peer_id) = 0;
-  virtual void OnMessageFromPeer(int peer_id, const std::string& message) = 0;
+  virtual void OnMessageFromPeer(const std::string& message) = 0;
   virtual void OnMessageSent(int err) = 0;
   virtual void OnServerConnectionFailure() = 0;
 
@@ -50,27 +48,19 @@ class PeerConnectionClient : public sigslot::has_slots<>,
   PeerConnectionClient();
   ~PeerConnectionClient();
 
-  int id() const;
-  bool is_connected() const;
-  const Peers& peers() const;
-
   void RegisterObserver(PeerConnectionClientObserver* callback);
 
   void Connect(const std::string& server,int port);
 
   bool SendToPeer(const std::string& message);
-  bool SendHangUp(int peer_id);
   bool IsSendingMessage();
-
-  bool SignOut();
 
   // implements the MessageHandler interface
   void OnMessage(rtc::Message* msg);
 
  protected:
-  void DoConnect();
   void Close();
-  void InitSocketSignals();
+//  void InitSocketSignals();
   bool ConnectControlSocket();
   void OnConnect(rtc::AsyncSocket* socket);
   void OnHangingGetConnect(rtc::AsyncSocket* socket);
@@ -88,13 +78,12 @@ class PeerConnectionClient : public sigslot::has_slots<>,
                       std::string* value);
 
   // Returns true if the whole response has been read.
-  bool ReadIntoBuffer(rtc::AsyncSocket* socket,
-                      std::string* data,
-                      size_t* content_length);
+  bool ReadIntoBuffer(int sockfd,
+                      std::string* data);
 
-  void OnRead(rtc::AsyncSocket* socket);
+  void OnRead(int sockfd);
 
-  void OnHangingGetRead(rtc::AsyncSocket* socket);
+//  void OnHangingGetRead(rtc::AsyncSocket* socket);
 
   // Parses a single line entry in the form "<name>,<id>,<connected>"
   bool ParseEntry(const std::string& entry,
@@ -105,13 +94,10 @@ class PeerConnectionClient : public sigslot::has_slots<>,
   int GetResponseStatus(const std::string& response);
 
   bool ParseServerResponse(const std::string& response,
-                           size_t content_length,
-                           size_t* peer_id,
                            size_t* eoh);
 
   void OnClose(rtc::AsyncSocket* socket, int err);
-
-  void OnResolveResult(rtc::AsyncResolverInterface* resolver);
+  int Send(char *data, int length);
 
   PeerConnectionClientObserver* callback_;
   rtc::SocketAddress server_address_;
@@ -120,7 +106,7 @@ class PeerConnectionClient : public sigslot::has_slots<>,
   std::string onconnect_data_;
   std::string control_data_;
   std::string notification_data_;
-  Peers peers_;
+  int m_sockfd;
   State state_;
 };
 

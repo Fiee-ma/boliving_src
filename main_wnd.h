@@ -23,6 +23,8 @@
 #include "api/video/video_sink_interface.h"
 #include "examples/peerconnection/client/main_wnd.h"
 #include "examples/peerconnection/client/peer_connection_client.h"
+#include "examples/peerconnection/client/commontypes.h"
+#include "examples/peerconnection/client/videorenderer.h"
 
 // Forward declarations.
 typedef struct _GtkWidget GtkWidget;
@@ -36,6 +38,7 @@ typedef struct _cairo cairo_t;
 // Implements the main UI of the peer connection client.
 // This is functionally equivalent to the MainWnd class in the Windows
 // implementation.
+
 class GtkMainWnd : public MainWindow {
  public:
   GtkMainWnd(const char* server, int port, bool autoconnect, bool autocall);
@@ -104,6 +107,8 @@ class GtkMainWnd : public MainWindow {
     int height_;
     GtkMainWnd* main_wnd_;
     rtc::scoped_refptr<webrtc::VideoTrackInterface> rendered_track_;
+    CVideoRenderer renderer_ ;
+     int64_t m_RecordTime;
   };
 
  protected:
@@ -125,5 +130,6 @@ class GtkMainWnd : public MainWindow {
   std::unique_ptr<uint8_t[]> draw_buffer_;
   int draw_buffer_size_;
 };
+
 
 #endif  // EXAMPLES_PEERCONNECTION_CLIENT_LINUX_MAIN_WND_H_

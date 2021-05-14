@@ -1,0 +1,54 @@
+Updated. Elapsed time: 1.506309 sec.
+[================================================x]
+
+- Finishing ... Done!
+x molokai:
+    fatal: 不能创建工作区目录 '/home/jack-ma/.vim/bundle/molokai': 权限不够
+- delimitMate: Already installed
+- vim-expand-region: Already installed
+- vim-python-pep8-indent: Already installed
+- vim-isort: Already installed
+- vim-textobj-user: Already installed
+- vim-snippets: Already installed
+- vim-colors-solarized: Already installed
+- vim-quickrun: Already installed
+- rainbow_parentheses.vim: Already installed
+- vim-ctrlspace: Already installed
+- nerdtree: Already installed
+- gundo.vim: Already installed
+- vim-fugitive: Already installed
+- ctrlp-funky: Already installed
+- ctrlp.vim: Already installed
+- tagbar: Already installed
+- vim-easy-align: Already installed
+- vim-textobj-line: Already installed
+- ctrlsf.vim: Already installed
+- vim-markdown: Already installed
+- YouCompleteMe: Already installed
+- vim-textobj-indent: Already installed
+- vim-repeat: Already installed
+- javascript-libraries-syntax.vim: Already installed
+- gruvbox: Already installed
+- matchit.zip: Already installed
+- yajs.vim: Already installed
+- vim-airline-themes: Already installed
+- vim-colorschemes: Already installed
+- vim-nerdtree-tabs: Already installed
+- vim-gitgutter: Already installed
+- vim-airline: Already installed
+- closetag.vim: Already installed
+- Vim-Jinja2-Syntax: Already installed
+- vim-indent-guides: Already installed
+- vim-easymotion: Already installed
+- ultisnips: Already installed
+- ale: Already installed
+- python-syntax: Already installed
+- vim-tmux-navigator: Already installed
+- quick-scope: Already installed
+- vim-textobj-entire: Already installed
+- vim-surround: Already installed
+- vim-multiple-cursors: Already installed
+- vim-trailing-whitespace: Already installed
+- vim-javascript: Already installed
+- vim-signature: Already installed
+- nerdcommenter: Already installed
